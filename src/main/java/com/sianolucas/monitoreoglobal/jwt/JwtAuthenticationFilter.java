@@ -12,7 +12,6 @@ import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
 import org.springframework.web.filter.OncePerRequestFilter;
 
-import com.sianolucas.monitoreoglobal.User.User;
 
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;

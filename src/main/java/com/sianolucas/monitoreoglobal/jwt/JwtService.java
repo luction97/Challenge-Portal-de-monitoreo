@@ -6,6 +6,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.function.Function;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Service;
 
@@ -20,7 +21,8 @@ import io.jsonwebtoken.security.Keys;
 @Service
 public class JwtService {
 
-    private static final String SECRET_KEY = "f6993362eb4f84965e8d20bf13f47ecefacbba3c056fb4395f9643c4cc9383cd";
+    @Value("${JWT_SECRET}")
+    private String SECRET_KEY;
 
     public String getToken(User user) {
 
