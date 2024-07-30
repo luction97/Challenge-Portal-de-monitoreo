@@ -37,6 +37,7 @@ build/
 Thumbs.db
 
 # Archivos de configuración del entorno
+src/main/resources/application.properties
 !*.properties
 !*.yml
 !*.yaml
