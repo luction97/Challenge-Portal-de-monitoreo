@@ -36,11 +36,14 @@ build/
 .DS_Store
 Thumbs.db
 
-# Archivos de configuración del entorno
+# Ignorar archivos sensibles de configuración
 src/main/resources/application.properties
-!*.properties
-!*.yml
-!*.yaml
+src/main/resources/application.yml
+src/main/resources/application.yaml
+
+# Permitir archivos de ejemplo de configuración
+!src/main/resources/application-test.properties
+
 
 # Archivos de configuración de VS Code
 .vscode/
