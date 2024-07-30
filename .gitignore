@@ -37,9 +37,9 @@ build/
 Thumbs.db
 
 # Archivos de configuración del entorno
-*.properties
-*.yml
-*.yaml
+!*.properties
+!*.yml
+!*.yaml
 
 # Archivos de configuración de VS Code
 .vscode/
